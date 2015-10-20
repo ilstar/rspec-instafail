@@ -1,7 +1,7 @@
 require 'rspec/core/formatters/progress_formatter'
 
 module RSpec
-  class Instafail < RSpec::Core::Formatters::ProgressFormatter
+  class Instafail < RSpec::Core::Formatters::DocumentationFormatter
     RSpec::Core::Formatters.register self, :example_failed
 
     def initialize(output)
